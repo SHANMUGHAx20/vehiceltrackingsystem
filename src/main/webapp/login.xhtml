@@ -1,0 +1,26 @@
+<HTML xmlns:h="http://java.sun.com/jsf/html">
+<HEAD>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+
+<TITLE>VTSN/Login</TITLE>
+</HEAD>
+<BODY>
+<H3>Sign up</H3>
+<h:form>
+<p>
+UserName:
+<h:inputText value="#{emp.uname}" />
+</p>
+<p>
+Password
+<h:inputSecret value="#{emp.password}" />
+</p>
+<p>
+<h:commandButton action="#{emp.find()}" value="Login"/>
+</p>
+<p>
+<h:outputLabel value="#{emp.response}"/>
+</p>
+</h:form>
+</BODY>
+</HTML>
